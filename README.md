@@ -50,7 +50,7 @@ The service MUST implement the following requirements:
 - The service will have an HTTP endpoint that receives a date parameter (YYYY-MM-DD). This method will be requested to select the JSON file to process.
 - The service will have an HTTP endpoint (/metrics) that returns a set of counters related with the processed JSON file:
   -	Number of rows with missing fields
-  -	Number of messages with binary content
+  -	Number of messages with blank content
   -	Number of rows with fields errors
   -	Number of calls origin/destination grouped by country code (https://en.wikipedia.org/wiki/MSISDN)
   -	Relationship between OK/KO calls
@@ -61,8 +61,9 @@ The service MUST implement the following requirements:
   - Total number of processed JSON files
   -	Total number of rows
   -	Total number of calls
-  -	Total number fo different origin country codes (https://en.wikipedia.org/wiki/MSISDN)
-  -	Total number fo different destination country codes (https://en.wikipedia.org/wiki/MSISDN)
+  -	Total number of messages  
+  -	Total number of different origin country codes (https://en.wikipedia.org/wiki/MSISDN)
+  -	Total number of different destination country codes (https://en.wikipedia.org/wiki/MSISDN)
   - Duration of each JSON process
 
 There is an explicit ambiguity of some requirements so the candidate can freely interpret and elaborate in consequence. Also, all coding best practices applied will be appreciated.
